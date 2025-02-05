@@ -3,7 +3,7 @@
     border: 1px solid rgb(255, 255, 255);
     /*flexbox*/
     display: flex;
-    width: 1500px;
+    width: 1000px;
     justify-content: space-between;
     /*position*/
     position: absolute;
