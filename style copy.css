@@ -1,0 +1,140 @@
+/* nav */
+
+nav{
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:baseline;
+
+    background-color:   rgb(240, 240, 240);
+}
+
+nav ul{
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: center;
+    
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    top:10px; 
+    
+    position:relative;
+    gap: 10px;
+
+    background-color:   rgb(240, 240, 240);
+}
+nav ul li{
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    text-align: left;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+
+body {
+    overflow:scroll; /* Prevents horizontal scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: rgb(240, 240, 240);
+}
+
+
+.container {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Allows squares to wrap to the next line */
+    justify-content: space-between; /* Adds spacing between squares */
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+
+.image a{
+    background-color: white; /* Makes the square background white */
+    display: flex;
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    aspect-ratio: 1; /* Ensures the square has equal width and height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+}
+.image {
+    background-color: white; /* Makes the square background white */
+    display: flex;
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    aspect-ratio: 1; /* Ensures the square has equal width and height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+}
+
+.text {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+}
+.text_index {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+}
+.text p{
+    font-size: 0.7vw;
+    color: rgba(0, 0, 0, 0.6); /* 60% black */
+}
+
+
+.image a {
+    width: 100%;
+    height: 100%;
+}
+.image a img {
+    max-width: 85%;
+    max-height: 85%;
+    /* Add the transition property here */
+    transition: opacity 0.9s ease;
+}
+.image img {
+    max-width: 85%;
+    max-height: 85%;
+    /* Add the transition property here */
+    transition: opacity 0.9s ease;
+}
+
+/* ...text */
+.container:has(.text:hover) .image img {
+    opacity: 100%;
+    transition: opacity 0.9s ease; /* For a smooth fade effect */
+}
+
+
+
+/* When hovering the container, all images become 10% opacity */
+.container:hover .image img {
+    opacity: 0.1;
+    transition: opacity 0.2s ease; /* For a smooth fade effect */
+
+}
+
+/* The hovered image stays at 100% opacity */
+.container .image:hover img {
+    opacity: 1;
+    transition: opacity 0.2s ease; /* For a smooth fade effect */
+}
+
+
