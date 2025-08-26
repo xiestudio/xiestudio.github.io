@@ -24,17 +24,19 @@
             <li></li>
             <li><a href="./images.html">Images</a></li>
             <li></li>
-
-            <li><a href="./images.html">Images</a></li>
-
         </ul>
     </nav>  
     
-
+    <div class="buttons">  
+        <button id="prev-btn">Prev</button>
+        <span>&nbsp;/&nbsp;</span>
+        <button id="next-btn">Next</button>
+    </div>
+    <p id="page-counter"></p> 
 
     <div class="container">
-        <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_01.jpg"></a> </div>  
-        <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_02.jpg"></a> </div>  
+        <div class="image"> <img id="img-1" src="./img/research/00_giudecca/giudecca_页面_01.jpg"></a> </div>  
+        <div class="image"> <img id="img-2" src="./img/research/00_giudecca/giudecca_页面_02.jpg"></a> </div>  
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_03.jpg"></a> </div>  
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_04.jpg"></a> </div>  
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_05.jpg"></a> </div>  
@@ -45,13 +47,78 @@
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_10.jpg"></a> </div>  
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_11.jpg"></a> </div>  
         <div class="image"> <img src="./img/research/00_giudecca/giudecca_页面_12.jpg"></a> </div>  
-    </div>     
+    </div>  
+    
+
+
+<script>
+    const images = document.querySelectorAll('.image');
+    let currentIndex = 0;
+
+    // Get the page counter element
+    const pageCounter = document.getElementById('page-counter');
+
+    // Function to update the text display
+    function updateCounter() {
+        // We add 1 to currentIndex because arrays are 0-indexed, but page numbers start at 1.
+        pageCounter.textContent = `${currentIndex + 1} / ${images.length}`;
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                currentIndex = Array.from(images).findIndex(image => image === entry.target);
+                updateCounter(); // Call the function to update the text
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    images.forEach(image => {
+        observer.observe(image);
+    });
+
+    // Handle the Next button click
+    document.getElementById('next-btn').onclick = function() {
+        if (currentIndex === images.length - 1) {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        } else {
+            const nextIndex = currentIndex + 1;
+            const nextImage = images[nextIndex];
+            nextImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
+    // Handle the Previous button click
+    document.getElementById('prev-btn').onclick = function() {
+        if (currentIndex === 0) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            const prevIndex = currentIndex - 1;
+            const prevImage = images[prevIndex];
+            prevImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
+    // Initial call to set the counter when the page loads
+    // Note: The Intersection Observer might handle this on page load if the first image is already in view,
+    // but this ensures it is set correctly from the start.
+    updateCounter();
+
+</script>
+
+
 </body>
 
-<footer></footer>
-<div style="text-align: center;">
+<footer>
   <a href="./projects.html">Back</a>
-</div>
-<footer></footer>
+</footer>
 
 </html>
