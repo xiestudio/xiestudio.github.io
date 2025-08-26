@@ -24,7 +24,6 @@ nav ul{
     align-items: center;
     flex-direction:row;
     justify-content: center;
-    flex-wrap: wrap; /* 换行 */
     
     width: calc(100% - 60px);
     margin: 0 auto;
@@ -33,30 +32,16 @@ nav ul{
     position:relative;
     gap: 10px;
 
+    background-color:   rgb(240, 240, 240);
 }
 nav ul li{
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */  
+    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
     text-align: left;
 }
 
 nav ul li:hover{
     text-decoration: underline;
 }
-
-
-
-
-.next-btn {
-    position: fixed;
-    left: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10001;
-    cursor: pointer;
-    border: none;
-}
-
-
 
 
 
