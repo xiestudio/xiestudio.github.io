@@ -51,9 +51,10 @@
 * {
   color: rgb(0, 0, 0, 0.8);
   text-decoration: none;
+  /* font-family: "Century Gothic", sans-serif; */
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }

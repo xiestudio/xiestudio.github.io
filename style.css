@@ -17,7 +17,7 @@ nav{
     background-color:   rgb(240, 240, 240);
 }
 
-nav ul{
+nav ul, footer ul{
     list-style-type: none;
 
     display: flex;
@@ -34,7 +34,7 @@ nav ul{
 
     background-color:   rgb(240, 240, 240);
 }
-nav ul li{
+nav ul li, footer ul li{
     width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
     text-align: left;
 }
@@ -48,7 +48,6 @@ nav ul li:hover{
 body {
     overflow:scroll; /* Prevents horizontal scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    background-color: rgb(240, 240, 240);
 }
 
 
@@ -61,7 +60,11 @@ body {
     justify-content: space-between; /* Adds spacing between squares */
     gap: 10px;
     margin-bottom: 100px;
+    background-color: rgb(158, 73, 73);
 }
+
+
+
 
 
 .image a{
@@ -87,15 +90,6 @@ body {
     display: flex;
     flex-direction: column; /* Stacks text vertically */
     width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
-}
-.text_index {
-    display: flex;
-    flex-direction: column; /* Stacks text vertically */
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
-}
-.text p{
-    font-size: 0.7vw;
-    color: rgba(0, 0, 0, 0.6); /* 60% black */
 }
 
 
@@ -154,4 +148,5 @@ body {
     transition: opacity 0.2s ease; /* For a smooth fade effect */
 }
 
+/* Projects */
 
