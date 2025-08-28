@@ -56,5 +56,6 @@
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
-  font-size: 0.9vw;
+  font-size: min(2vh, 0.9vw);
+  /* font-size: 1rem; */
 }
