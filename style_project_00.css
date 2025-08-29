@@ -89,15 +89,9 @@ body {
     margin: 0 auto;
     margin-top: 13vh;
     display: flex;
-    flex-wrap: wrap; /* Allows squares to wrap to the next line */
-    justify-content: space-between; /* Adds spacing between squares */
-    gap: 5vw;
-    /* margin-bottom: 100px; */
-
-    align-items: center; /* Centers the image vertically */
-    justify-content: center; /* Centers the image horizontally */
-    box-sizing: border-box; /* Includes padding and border in the width/height */
-
+    flex-direction: column;
+    align-items: center;
+    gap: 13vh;
 }
 
 

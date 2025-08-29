@@ -123,8 +123,6 @@ body {
     transition: opacity 0.9s ease;
 }
 
-
-
 .container[data-active-group="1"] .image[data-group="1"] img,
 .container[data-active-group="2"] .image[data-group="2"] img,
 .container[data-active-group="3"] .image[data-group="3"] img,
@@ -140,3 +138,32 @@ body {
     transition: opacity 0.2s ease;
 }
 
+
+
+.container[data-active-group="1"] .text:not([data-group="1"]) p,
+.container[data-active-group="2"] .text:not([data-group="2"]) p,
+.container[data-active-group="3"] .text:not([data-group="3"]) p,
+.container[data-active-group="4"] .text:not([data-group="4"]) p,
+.container[data-active-group="5"] .text:not([data-group="5"]) p,
+.container[data-active-group="6"] .text:not([data-group="6"]) p,
+.container[data-active-group="7"] .text:not([data-group="7"]) p,
+.container[data-active-group="8"] .text:not([data-group="8"]) p,
+.container[data-active-group="9"] .text:not([data-group="9"]) p,
+.container[data-active-group="10"] .text:not([data-group="10"]) p,
+.container[data-active-group="11"] .text:not([data-group="11"]) p {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.container[data-active-group="1"] .text[data-group="1"] p,
+.container[data-active-group="2"] .text[data-group="2"] p,
+.container[data-active-group="3"] .text[data-group="3"] p,
+.container[data-active-group="4"] .text[data-group="4"] p,
+.container[data-active-group="5"] .text[data-group="5"] p,
+.container[data-active-group="6"] .text[data-group="6"] p,
+.container[data-active-group="7"] .text[data-group="7"] p,
+.container[data-active-group="8"] .text[data-group="8"] p,
+.container[data-active-group="9"] .text[data-group="9"] p,
+.container[data-active-group="10"] .text[data-group="10"] p,
+.container[data-active-group="11"] .text[data-group="11"] p {
+    color: rgb(0, 0, 0, 1);
+}
