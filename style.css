@@ -7,7 +7,7 @@ nav{
     left: 0;
 
     width: 100%;
-    height: 100px;
+    height: 13vh;
 
     display: flex;
     align-items: center;
@@ -25,17 +25,17 @@ nav ul, footer ul{
     flex-direction:row;
     justify-content: center;
     
-    width: calc(100% - 60px);
+    width: calc(100% - 3vw);
     margin: 0 auto;
-    top:10px; 
+    top:1.3vh; 
     
     position:relative;
-    gap: 10px;
+    gap: 0.5vw;
 
     background-color:   rgb(240, 240, 240);
 }
 nav ul li, footer ul li{
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
     text-align: left;
 }
 
@@ -48,73 +48,69 @@ nav ul li:hover{
 body {
     overflow:scroll; /* Prevents horizontal scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color:   rgb(240, 240, 240);
+
 }
 
 
 .container {
-    width: calc(100% - 60px);
+    width: calc(100% - 3vw);
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 13vh;
     display: flex;
     flex-wrap: wrap; /* Allows squares to wrap to the next line */
     justify-content: space-between; /* Adds spacing between squares */
-    gap: 10px;
-    margin-bottom: 100px;
-    background-color: rgb(158, 73, 73);
+    gap: 0.5vw;
+    margin-bottom: 13vh;
 }
 
 
 
 
-
-.image a{
-    background-color: white; /* Makes the square background white */
-    display: flex;
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
-    aspect-ratio: 1; /* Ensures the square has equal width and height */
-    align-items: center; /* Centers the image vertically */
-    justify-content: center; /* Centers the image horizontally */
-    box-sizing: border-box; /* Includes padding and border in the width/height */
-}
 .image {
     background-color: white; /* Makes the square background white */
     display: flex;
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
     aspect-ratio: 1; /* Ensures the square has equal width and height */
     align-items: center; /* Centers the image vertically */
     justify-content: center; /* Centers the image horizontally */
     box-sizing: border-box; /* Includes padding and border in the width/height */
 }
+.image a{
+    background-color: white; /* Makes the square background white */
+    display: flex;
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    aspect-ratio: 1; /* Ensures the square has equal width and height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+    width: 100%;
+    height: 100%;
+
+}
+
 
 .text {
     display: flex;
     flex-direction: column; /* Stacks text vertically */
-    width: calc((100% - 50px) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    width: calc((100% - 2.5vw) / 6);
+    /* background-color: rgb(122, 23, 23); */
 }
 
 
-.image a {
-    width: 100%;
-    height: 100%;
-}
+
 .image a img {
-    max-width: 85%;
-    max-height: 85%;
-    /* Add the transition property here */
-    transition: opacity 0.9s ease;
-}
-.image img {
-    max-width: 85%;
-    max-height: 85%;
-    /* Add the transition property here */
-    transition: opacity 0.9s ease;
+    max-width: 90%;
+    max-height: 90%;
+    opacity: 0%;
+    /* transition: opacity 0.9s ease; */
 }
 
-/* ...text */
-.container:has(.text:hover) .image img {
-    opacity: 100%;
-    transition: opacity 0.9s ease; /* For a smooth fade effect */
-}
+
+/* .container:has(.text:hover) .image img {
+    opacity: 0%;
+    transition: opacity 0.9s ease;
+} */
 
 
 
@@ -128,9 +124,10 @@ body {
 .container:has(.image[data-group="7"]:hover) .image:not([data-group="7"]) img,
 .container:has(.image[data-group="8"]:hover) .image:not([data-group="8"]) img,
 .container:has(.image[data-group="9"]:hover) .image:not([data-group="9"]) img,
-.container:has(.image[data-group="10"]:hover) .image:not([data-group="10"]) img {
-    opacity: 10%;
-    transition: opacity 0.2s ease; /* For a smooth fade effect */
+.container:has(.image[data-group="10"]:hover) .image:not([data-group="10"]) img,
+.container:has(.image[data-group="11"]:hover) .image:not([data-group="11"]) img {
+    opacity: 0%;
+    transition: opacity 0.2s ease;
 }
 
 /* 被 hover 的 group 保持高亮 */
@@ -143,10 +140,9 @@ body {
 .container:has(.image[data-group="7"]:hover) .image[data-group="7"] img,
 .container:has(.image[data-group="8"]:hover) .image[data-group="8"] img,
 .container:has(.image[data-group="9"]:hover) .image[data-group="9"] img,
-.container:has(.image[data-group="10"]:hover) .image[data-group="10"] img {
+.container:has(.image[data-group="10"]:hover) .image[data-group="10"] img,
+.container:has(.image[data-group="11"]:hover) .image[data-group="11"] img {
     opacity: 100%;
-    transition: opacity 0.2s ease; /* For a smooth fade effect */
+    transition: opacity 0.2s ease;
 }
-
-/* Projects */
 
