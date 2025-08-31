@@ -10,6 +10,7 @@
   }
   
   body {
+    cursor:crosshair;
     /* 3. Add accessible line-height */
     line-height: 1.5;
     /* 4. Improve text rendering */
