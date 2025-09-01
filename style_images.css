@@ -134,3 +134,25 @@ body {
 }
 
 
+
+
+
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+
+* {
+  font-size: 0.8rem;
+}
+
+.text{
+    display: none;
+}
+
+.image {
+    width: 100%;
+}
+
+
+}

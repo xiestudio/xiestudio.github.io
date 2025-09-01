@@ -176,13 +176,10 @@ body {
 
 .container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 3vw);
 }
 
 .about-contact {
-    width: calc(100% - 3vw);
+    width: 100%;
 }
 
 .about {
@@ -194,7 +191,7 @@ body {
 
 
 .empty-research {
-    width: calc(100% - 3vw);
+    width: 100%;
 }
 .empty {
     display: none;

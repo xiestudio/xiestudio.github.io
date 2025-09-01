@@ -167,3 +167,31 @@ body {
 .container[data-active-group="11"] .text[data-group="11"] p {
     color: rgb(0, 0, 0, 1);
 }
+
+
+
+
+
+
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+
+* {
+  font-size: 0.8rem;
+}
+
+.text{
+    display: none;
+}
+
+.image {
+    width: calc((100% - 1.5vw) / 3);
+}
+
+.image a img {
+    opacity: 100%;
+}
+
+}

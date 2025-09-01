@@ -117,3 +117,31 @@ footer {
 
 
 
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+
+* {
+  font-size: 0.8rem;
+}
+
+.image {
+    width: 100%;
+}
+
+
+.buttons {
+    display: none;
+}
+
+.buttons button {
+    display: none;
+}
+
+#page-counter {
+    display: none;
+}
+
+
+}
