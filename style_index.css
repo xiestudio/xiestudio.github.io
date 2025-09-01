@@ -69,7 +69,7 @@ nav ul li:hover{
 .container .empty-research .research .toggle a:hover{
     cursor: pointer;
     text-decoration: underline;
-    /* color: rgb(153, 10, 10); */
+    /* color: rgb(153, 10, 10); change underline color*/
 }
 .container img:hover{
     cursor: pointer;
@@ -157,3 +157,71 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+* {
+  font-size: 0.8rem;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 3vw);
+}
+
+.about-contact {
+    width: calc(100% - 3vw);
+}
+
+.about {
+    height: fit-content;
+}
+.contact{
+    margin-top: 5vh;
+} 
+
+
+.empty-research {
+    width: calc(100% - 3vw);
+}
+.empty {
+    display: none;
+}
+.research{
+    margin-top: 5vh;
+} 
+
+img {
+    display: none;
+}
+
+
+
+.toggle {
+    display: block;
+}
+.toggle.visible {
+    display: block;
+}
+
+
+
+footer ul{
+    align-items:baseline;
+}
+
+
+
+}
