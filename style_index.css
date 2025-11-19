@@ -133,7 +133,7 @@ body {
 }
 
 .container img {
-    position:relative;
+    position: relative;
     max-height: calc(100vh - 26vh);
     max-width: calc((100% - 2.5vw) / 6 * 2 + 0.5vw);
     object-fit: contain;
