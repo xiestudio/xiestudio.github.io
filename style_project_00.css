@@ -1,0 +1,147 @@
+/* nav */
+
+nav{
+    position: absolute;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 13vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:baseline;
+
+    background-color:   rgb(240, 240, 240);
+}
+
+nav ul{
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: center;
+    
+    width: calc(100% - 3vw);
+    margin: 0 auto;
+    top: 1.3vh; 
+    
+    position:relative;
+    gap: 0.5vw;
+
+    background-color:   rgb(240, 240, 240);
+}
+nav ul li{
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    text-align: left;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+
+/* button */
+
+.buttons {
+    position: fixed;
+    right: 1.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10001;
+    /* Add display: flex to arrange items horizontally */
+    display: flex; 
+    align-items: center; /* Vertically center items within the container */
+}
+
+.buttons button {
+    border: none;
+    cursor: pointer;
+    background: transparent; /* Makes the buttons transparent */
+}
+
+#page-counter {
+    position: fixed;
+    left: 1.5vw; /* Positions the element 30px from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the element */
+    z-index: 10001; /* Keeps it on top of other content */
+}
+
+
+
+
+
+
+body {
+    overflow:scroll; /* Prevents horizontal scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: rgb(240, 240, 240);
+}
+
+
+.container {
+    width: calc(100% - 3vw);
+    margin: 0 auto;
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13vh;
+}
+
+
+.image{
+    width: calc((100% - 2.5vw) / 6 * 4 + 1.5vw); /* Adjusted to fit 6 squares per row with spacing */
+}
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;    /* Vertically centers the content */
+    
+    /* Optional: Add height and other styles for the footer's appearance */
+    height: 26vh; 
+    width: 100%;
+}
+
+
+
+
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+
+* {
+  font-size: 0.8rem;
+}
+
+.image {
+    width: 100%;
+}
+
+
+.buttons {
+    display: none;
+}
+
+.buttons button {
+    display: none;
+}
+
+#page-counter {
+    display: none;
+}
+
+
+}

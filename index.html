@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex, nofollow, noimageindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIE Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        em {
+            font-style: italic;
+            color: rgb(0, 0, 0, 0.6);
+        }
+    </style>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style_index.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41Y74VDSYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-41Y74VDSYY');
+    </script>
+
+</head>
+
+
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">XIE</a></li>
+            <li></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li></li>
+            <li><a href="./images.html">Images</a></li>
+            <li></li>
+        </ul>
+    </nav>  
+    
+    
+    
+    <div class="container">
+
+        <div class="about-contact">
+            <div class="about">
+                <p>Huiyang Xie is a freelance architect and visualizer based in Italy and China. He completed a B.Sc. in Architecture at 
+                    the South China University of Technology, specializing in Historic Building Conservation, and an M.Sc. in Architecture 
+                    at the IUAV University of Venice, with the thesis <em>Carlo Scarpa: Foresteria Querini Stampalia</em>, under the supervision of 
+                    Professor Vitale Zanchettin.</p>
+                <br>
+                <p>He has gained professional experience in both architecture and visualization offices in China, Germany, Romania, and Italy. 
+                    Currently, his focus is on 3D visualization as an instrument to build the unbuilt.</p>
+            </div>
+            <div class="contact">
+                <h1 class="toggle-click">Contact</h1>
+                <br>
+                <div class="toggle">
+                    <!-- <p>+ 39 351 038 4079 (IT)</p>  -->
+                    <p>+ 39 351 038 4079</p> 
+                    <!-- <p>+ 86 152 101 68190 (CN)</p> -->
+                    <p>info@xiestudio.com</p>
+                    <a href="https://www.instagram.com/smartsheeep/" target="_blank">Instagram</a> 
+                </div>   
+            </div>
+        </div>
+
+        <div class="empty-research">
+            <div class="empty"></div>
+            <div class="research">
+                <h1 class="toggle-click">Research</h1>
+                <br>
+                <div class="toggle">
+                    <a href="./research_00_foresteria.html"><p><em>Carlo Scarpa: Foresteria Querini Stampalia</em></p></a>
+                    <a href="./research_00_traditional chinese painting.html"><p><em>Traditional Chinese Painting: Aesthetic Width and Depth</em></p></a>
+                    <a href="./research_00_evocation of antiquity.html"><p><em>Evocation of Antiquity: Style, Method and Atmosphere</em></p></a>
+                    <a href="./research_00_giudecca.html"><p><em>Giudecca: Identity of Periphery</em></p></a>
+                    <!-- <a href="./research_00_passetto di borgo.html"><p><em>Pasetto di Borgo</em></p></a> -->
+                    <a href="./research_00_gregotti.html"><p><em>Vittorio Gregotti: Context and Architecture</em></p></a>
+                    <a href="./research_00_miracoli redentore.html"><p><em>Facades of Santa Maria dei Miracoli and Santissimo Redentore</em></p></a>
+                    <a href="./project_00_wuxianguan.html"><p><em>Survey and Analysis of Rear Hall of the Five-Immortal Temple</em></p></a>
+                </div>
+            </div>
+        </div>
+
+        <img src="./img/images/3.jpg">
+
+    </div>
+
+    <footer>
+        <ul>
+            <li>P.IVA: 04871450278</li>
+            <li></li>
+            <li>Web and Code: Huiyang Xie</li>
+            <li></li>
+            <li>© 2025 Huiyang Xie</li>
+            <li></li>
+        </ul>
+    </footer>    
+    
+
+<script>
+// Select all toggle-click headers
+document.querySelectorAll('.toggle-click').forEach(function(header) {
+    header.addEventListener('click', function() {
+        // Find the next sibling element that has the class 'toggle'
+        let sibling = header.nextElementSibling;
+        // Skip <br> if present
+        while (sibling && (sibling.tagName === 'BR' || !sibling.classList.contains('toggle'))) {
+            sibling = sibling.nextElementSibling;
+        }
+        if (sibling && sibling.classList.contains('toggle')) {
+            sibling.style.display = (sibling.style.display === 'block') ? 'none' : 'block';
+        }
+    });
+});
+
+// Optionally, hide all toggles on page load
+// document.querySelectorAll('.toggle').forEach(function(div) {
+//     div.style.display = 'none';
+// }); 250901 remove otherwise mobile display doesnt work
+</script>
+
+
+<script>
+    const images = [
+        "./img/images/3.jpg",
+        "./img/images/2.jpg",
+        "./img/images/1.jpg",
+
+        "./img/images/view02 251119.jpg",
+        "./img/images/view01 251112.jpg",
+        "./img/images/251107.jpg",
+        
+        "./img/images/4.jpg",
+        "./img/images/6.jpg",
+        "./img/images/9.jpg",
+        "./img/images/10.jpg",
+        "./img/images/13.jpg",
+        "./img/images/15.jpg",
+        "./img/images/18.jpg",
+        "./img/projects/00_foresteria_01.jpg",
+        "./img/projects/00_tempio_03.jpg",
+        "./img/projects/00_wuxianguan_01.jpg",
+        "./img/projects/00_wuxianguan_03.jpg",
+
+    ];
+
+    let current = 0;
+    // Correctly selects the image element
+    const imgDiv = document.querySelector('.container img');
+
+    // Add an event listener to the selected image element
+    imgDiv.onclick = function() {
+        // Increment the image index and loop back to 0 if it exceeds the array length
+        current = (current + 1) % images.length;
+        // Update the image source to the next image in the array
+        imgDiv.src = images[current];
+    };
+</script>
+
+
+
+</body>
+</html>

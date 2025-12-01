@@ -1,0 +1,205 @@
+/* nav */
+
+nav{
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 13vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:baseline;
+
+    background-color:   rgb(240, 240, 240);
+}
+
+nav ul, footer ul{
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: center;
+    
+    width: calc(100% - 3vw);
+    margin: 0 auto;
+    top:1.3vh; 
+    
+    position:relative;
+    gap: 0.5vw;
+
+    background-color:   rgb(240, 240, 240);
+}
+nav ul li, footer ul li{
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    text-align: left;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+
+body {
+    overflow:scroll; /* Prevents horizontal scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color:   rgb(240, 240, 240);
+
+}
+
+
+.container {
+    width: calc(100% - 3vw);
+    margin: 0 auto;
+    margin-top: 13vh;
+    display: flex;
+    flex-wrap: wrap; /* Allows squares to wrap to the next line */
+    justify-content: space-between; /* Adds spacing between squares */
+    gap: 0.5vw;
+    margin-bottom: 13vh;
+}
+
+
+
+
+.image {
+    background-color: white; /* Makes the square background white */
+    display: flex;
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    aspect-ratio: 1; /* Ensures the square has equal width and height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+}
+.image a{
+    background-color: white; /* Makes the square background white */
+    display: flex;
+    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    aspect-ratio: 1; /* Ensures the square has equal width and height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 2.5vw) / 6);
+    /* background-color: rgb(122, 23, 23); */
+}
+
+
+
+.image a img {
+    max-width: 90%;
+    max-height: 90%;
+    opacity: 0%;
+}
+
+
+
+
+.container[data-active-group="1"] .image:not([data-group="1"]),
+.container[data-active-group="2"] .image:not([data-group="2"]),
+.container[data-active-group="3"] .image:not([data-group="3"]),
+.container[data-active-group="4"] .image:not([data-group="4"]),
+.container[data-active-group="5"] .image:not([data-group="5"]),
+.container[data-active-group="6"] .image:not([data-group="6"]),
+.container[data-active-group="7"] .image:not([data-group="7"]),
+.container[data-active-group="8"] .image:not([data-group="8"]),
+.container[data-active-group="9"] .image:not([data-group="9"]),
+.container[data-active-group="10"] .image:not([data-group="10"]),
+.container[data-active-group="11"] .image:not([data-group="11"]),
+.container[data-active-group="12"] .image:not([data-group="12"]) 
+{
+    opacity: 0%;
+    transition: opacity 0.9s ease;
+}
+
+.container[data-active-group="1"] .image[data-group="1"] img,
+.container[data-active-group="2"] .image[data-group="2"] img,
+.container[data-active-group="3"] .image[data-group="3"] img,
+.container[data-active-group="4"] .image[data-group="4"] img,
+.container[data-active-group="5"] .image[data-group="5"] img,
+.container[data-active-group="6"] .image[data-group="6"] img,
+.container[data-active-group="7"] .image[data-group="7"] img,
+.container[data-active-group="8"] .image[data-group="8"] img,
+.container[data-active-group="9"] .image[data-group="9"] img,
+.container[data-active-group="10"] .image[data-group="10"] img,
+.container[data-active-group="11"] .image[data-group="11"] img,
+.container[data-active-group="12"] .image[data-group="12"] img 
+{
+    opacity: 100%;
+    transition: opacity 0.2s ease;
+}
+
+
+
+.container[data-active-group="1"] .text:not([data-group="1"]) p,
+.container[data-active-group="2"] .text:not([data-group="2"]) p,
+.container[data-active-group="3"] .text:not([data-group="3"]) p,
+.container[data-active-group="4"] .text:not([data-group="4"]) p,
+.container[data-active-group="5"] .text:not([data-group="5"]) p,
+.container[data-active-group="6"] .text:not([data-group="6"]) p,
+.container[data-active-group="7"] .text:not([data-group="7"]) p,
+.container[data-active-group="8"] .text:not([data-group="8"]) p,
+.container[data-active-group="9"] .text:not([data-group="9"]) p,
+.container[data-active-group="10"] .text:not([data-group="10"]) p,
+.container[data-active-group="11"] .text:not([data-group="11"]) p,
+.container[data-active-group="12"] .text:not([data-group="12"]) p 
+{
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.container[data-active-group="1"] .text[data-group="1"] p,
+.container[data-active-group="2"] .text[data-group="2"] p,
+.container[data-active-group="3"] .text[data-group="3"] p,
+.container[data-active-group="4"] .text[data-group="4"] p,
+.container[data-active-group="5"] .text[data-group="5"] p,
+.container[data-active-group="6"] .text[data-group="6"] p,
+.container[data-active-group="7"] .text[data-group="7"] p,
+.container[data-active-group="8"] .text[data-group="8"] p,
+.container[data-active-group="9"] .text[data-group="9"] p,
+.container[data-active-group="10"] .text[data-group="10"] p,
+.container[data-active-group="11"] .text[data-group="11"] p,
+.container[data-active-group="12"] .text[data-group="12"] p 
+{
+    color: rgb(0, 0, 0, 1);
+}
+
+
+
+
+
+
+/* ========================================= */
+/* ===== MOBILE-SPECIFIC STYLES (768px and below) ===== */
+/* ========================================= */
+@media (max-width: 768px) {
+
+* {
+  font-size: 0.8rem;
+}
+
+.text{
+    display: none;
+}
+
+.image {
+    width: calc((100% - 1.5vw) / 3);
+}
+
+.image a img {
+    opacity: 100%;
+}
+
+}
