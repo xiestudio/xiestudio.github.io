@@ -1,0 +1,2 @@
+# Ignore local img folder (we use Cloudflare R2 for images)
+img/
