@@ -63,7 +63,7 @@ nav ul li:nth-child(2){
 body {
     overflow:scroll; /* Prevents horizontal scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240); /* dim default background like desktop non-hover state */
 }
 
 /* images */
@@ -75,7 +75,8 @@ body {
     flex-wrap: wrap; /* Allows squares to wrap to the next line */
     justify-content: space-between; /* Adds spacing between squares */
     gap: 0.5vw;
-    margin-bottom: 13vh;
+    /* margin-bottom: 13vh; */
+    background-color: rgb(240, 240, 240); /* dim default background like desktop non-hover state */
 }
 
 .image {

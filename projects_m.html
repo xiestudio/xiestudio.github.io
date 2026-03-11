@@ -135,10 +135,28 @@
 
         function updateActive() {
             let hit = null;
+        
+
+            /*这三个点是因为之前光加else if isAtBottom 判断不出来*/
+            // 1. Calculate how far we've scrolled
+            const scrollPosition = window.innerHeight + window.pageYOffset;  
+            // 2. Use the document scrollHeight for better accuracy than offsetHeight
+            const documentHeight = document.documentElement.scrollHeight;
+            // 3. Define a small buffer to handle sub-pixel rounding
+            const buffer = 10; 
+            const isAtBottom = (scrollPosition >= documentHeight - buffer);
+
+
+            
             // special rule: when scrolled to very top, always highlight group 8
             if (window.pageYOffset <= 0) {
                 hit = '8';
-            } else {
+            } 
+            // special rule: when scrolled to very bottom, always highlight group 12
+            else if (isAtBottom) {
+                hit = '12';
+            }
+            else {
                 const mid = window.innerHeight / 2;
                 container.querySelectorAll('[data-group]').forEach(item => {
                     const rect = item.getBoundingClientRect();

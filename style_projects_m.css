@@ -59,7 +59,6 @@ body {
     overflow:scroll; /* Prevents horizontal scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
     background-color:   rgb(240, 240, 240);
-
 }
 
 
@@ -71,8 +70,7 @@ body {
     flex-wrap: wrap; /* Allows squares to wrap to the next line */
     justify-content: space-between; /* Adds spacing between squares */
     gap: 1.25vw;/* 控制白块块上下左右之间的距离 */
-    margin-bottom: 13vh;
-
+    /* margin-bottom: 13vh; */
 }
 
 
