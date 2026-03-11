@@ -182,7 +182,7 @@ body {
   font-size: 1.05rem;
 }
 
-/* remove the placeholder empty <li> items on mobile */
+/* 260312 remove the placeholder empty <li> items on mobile */
 nav ul li:empty {
     display: none;
 }
@@ -200,7 +200,26 @@ nav ul li:nth-child(5){
     text-align: right;
 }
 
-/* make footer behave like normal document flow */
+
+
+
+/* 260312 nav透明控制初始状态高度 nav ul控制下滑遮挡高度*/
+nav{
+    background-color:transparent;
+}
+
+nav ul{
+    top: 0; 
+    padding: 1.3vh 0;
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+
+/* 260312 make footer behave like normal document flow */
 footer ul {
     position: static;
     width: calc(100% - 3vw);
@@ -218,8 +237,7 @@ footer ul {
 
 
 
-
-
+/*260312之前 已经做好的pc改mobile排版*/
 .container {
     flex-direction: column;
 }
@@ -253,12 +271,10 @@ img {
 
 
 
-/* make about section static & non-interactive on mobile */
+/* 260312 contact research 两个按钮不能点击*/
 .about-contact .contact h1{
     pointer-events: none;
 }
-
-/* make research section static & non-interactive on mobile */
 .empty-research .research h1{
     pointer-events: none;
 }

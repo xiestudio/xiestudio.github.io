@@ -145,9 +145,21 @@ nav ul li:nth-child(5){
 }
 
 
+
+/* 260312 nav透明控制初始状态高度 nav ul控制下滑遮挡高度*/
 nav{
     position: fixed;
+    background-color:transparent;
 }
+
+nav ul{
+    top: 0; 
+    padding: 1.3vh 0;
+    background-color: rgb(240, 240, 240);
+}
+
+
+
 
 .container {
     gap: 8vh;

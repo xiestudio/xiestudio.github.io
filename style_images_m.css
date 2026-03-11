@@ -6,7 +6,7 @@
 }
 
 
-
+/* 260312 nav透明控制初始状态高度 nav ul控制下滑遮挡高度*/
 nav{
     position: fixed;
     z-index: 100000;
@@ -21,7 +21,6 @@ nav{
     flex-direction: column;
     justify-content:baseline;
 
-    background-color:   rgb(240, 240, 240);
 }
 
 nav ul{
@@ -34,26 +33,29 @@ nav ul{
     
     width: calc(100% - 3vw);
     margin: 0 auto;
-    top:1.3vh; 
-    
+    padding: 1.3vh 0;
+
     position:relative;
     gap: 0.5vw;
 
     background-color: rgb(240, 240, 240);
 }
+
+
+/* 260312 nav排版顶住左右两头*/
 nav ul li{
-    /* width: calc((100% - 1vw) / 3); Adjusted to fit 6 squares per row with spacing */
     text-align: left;
     background-color: rgb(240, 240, 240);
-
 }
 
-/* nav ul li:nth-child(2), */
 nav ul li:nth-child(2){
     margin-left: auto;
     text-align: right;
     background-color: rgb(240, 240, 240);
 }
+
+
+
 
 
 
