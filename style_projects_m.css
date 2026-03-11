@@ -1,5 +1,8 @@
-/* nav */
+* {
+  font-size: 1rem;
+}
 
+/* nav */
 nav{
     position: fixed;
     z-index: 100000;
@@ -17,7 +20,7 @@ nav{
     background-color:   rgb(240, 240, 240);
 }
 
-nav ul, footer ul{
+nav ul{
     list-style-type: none;
 
     display: flex;
@@ -32,16 +35,25 @@ nav ul, footer ul{
     position:relative;
     gap: 0.5vw;
 
-    background-color:   rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
 }
-nav ul li, footer ul li{
-    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+nav ul li{
+    /* width: calc((100% - 1vw) / 3); Adjusted to fit 6 squares per row with spacing */
     text-align: left;
+    background-color: rgb(240, 240, 240);
+
 }
 
-nav ul li:hover{
-    text-decoration: underline;
+/* nav ul li:nth-child(2), */
+nav ul li:nth-child(2){
+    margin-left: auto;
+    text-align: right;
+    background-color: rgb(240, 240, 240);
 }
+
+
+
+
 
 
 
@@ -70,7 +82,7 @@ body {
 .image {
     background-color: white; /* Makes the square background white */
     display: flex;
-    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    width: calc((100% - 2.5vw) / 3); /* Adjusted to fit 6 squares per row with spacing */
     aspect-ratio: 1; /* Ensures the square has equal width and height */
     align-items: center; /* Centers the image vertically */
     justify-content: center; /* Centers the image horizontally */
@@ -79,7 +91,7 @@ body {
 .image a{
     background-color: white; /* Makes the square background white */
     display: flex;
-    width: calc((100% - 2.5vw) / 6); /* Adjusted to fit 6 squares per row with spacing */
+    width: calc((100% - 2.5vw) / 3); /* Adjusted to fit 6 squares per row with spacing */
     aspect-ratio: 1; /* Ensures the square has equal width and height */
     align-items: center; /* Centers the image vertically */
     justify-content: center; /* Centers the image horizontally */
@@ -93,8 +105,7 @@ body {
 .text {
     display: flex;
     flex-direction: column;
-    width: calc((100% - 2.5vw) / 6);
-    /* background-color: rgb(122, 23, 23); */
+    width: 100%;
 }
 
 
@@ -102,7 +113,7 @@ body {
 .image a img {
     max-width: 90%;
     max-height: 90%;
-    opacity: 0%;
+    opacity: 100%;
 }
 
 
@@ -175,8 +186,6 @@ body {
 {
     color: rgb(0, 0, 0, 1);
 }
-
-
 
 
 
