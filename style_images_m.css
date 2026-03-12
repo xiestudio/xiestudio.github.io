@@ -99,27 +99,116 @@ body {
     color: rgba(0, 0, 0, 0.6);
 }
 
-/* images hover*/
-.image img {
-    max-width: 80%;
-    max-height: 80%;
-    /* cursor: pointer; */
-    transition: opacity 0.9s ease;
-}
+
 
 /* dim all images by default; highlight .visible element */
 .image img {
+    max-width: 80%;
+    max-height: 80%;
     opacity: 0.6;
     transition: opacity 0.2s ease;
 }
-.image.visible img {
-    opacity: 1;
-}
 
-/* when an image is the chosen one, give it a white background like desktop hover */
-.image.visible {
+
+
+
+
+
+/* 1. Background for inactive images */
+.container[data-active-group="1"] .image[data-group="1"],
+.container[data-active-group="2"] .image[data-group="2"],
+.container[data-active-group="3"] .image[data-group="3"],
+.container[data-active-group="4"] .image[data-group="4"],
+.container[data-active-group="5"] .image[data-group="5"],
+.container[data-active-group="6"] .image[data-group="6"],
+.container[data-active-group="7"] .image[data-group="7"],
+.container[data-active-group="8"] .image[data-group="8"],
+.container[data-active-group="9"] .image[data-group="9"],
+.container[data-active-group="10"] .image[data-group="10"],
+.container[data-active-group="11"] .image[data-group="11"],
+.container[data-active-group="12"] .image[data-group="12"],
+.container[data-active-group="13"] .image[data-group="13"],
+.container[data-active-group="14"] .image[data-group="14"],
+.container[data-active-group="15"] .image[data-group="15"],
+.container[data-active-group="16"] .image[data-group="16"],
+.container[data-active-group="17"] .image[data-group="17"],
+.container[data-active-group="18"] .image[data-group="18"],
+.container[data-active-group="19"] .image[data-group="19"],
+.container[data-active-group="20"] .image[data-group="20"],
+.container[data-active-group="21"] .image[data-group="21"],
+.container[data-active-group="22"] .image[data-group="22"],
+.container[data-active-group="23"] .image[data-group="23"]
+{
     background-color: rgb(255, 255, 255);
 }
+/* 2. Opacity and transition for inactive images */
+.container[data-active-group="1"] .image[data-group="1"] img,
+.container[data-active-group="2"] .image[data-group="2"] img,
+.container[data-active-group="3"] .image[data-group="3"] img,
+.container[data-active-group="4"] .image[data-group="4"] img,
+.container[data-active-group="5"] .image[data-group="5"] img,
+.container[data-active-group="6"] .image[data-group="6"] img,
+.container[data-active-group="7"] .image[data-group="7"] img,
+.container[data-active-group="8"] .image[data-group="8"] img,
+.container[data-active-group="9"] .image[data-group="9"] img,
+.container[data-active-group="10"] .image[data-group="10"] img,
+.container[data-active-group="11"] .image[data-group="11"] img,
+.container[data-active-group="12"] .image[data-group="12"] img,
+.container[data-active-group="13"] .image[data-group="13"] img,
+.container[data-active-group="14"] .image[data-group="14"] img,
+.container[data-active-group="15"] .image[data-group="15"] img,
+.container[data-active-group="16"] .image[data-group="16"] img,
+.container[data-active-group="17"] .image[data-group="17"] img,
+.container[data-active-group="18"] .image[data-group="18"] img,
+.container[data-active-group="19"] .image[data-group="19"] img,
+.container[data-active-group="20"] .image[data-group="20"] img,
+.container[data-active-group="21"] .image[data-group="21"] img,
+.container[data-active-group="22"] .image[data-group="22"] img,
+.container[data-active-group="23"] .image[data-group="23"] img
+{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+/* 3. Text color for active group */
+.container[data-active-group="1"] .text[data-group="1"] p,
+.container[data-active-group="2"] .text[data-group="2"] p,
+.container[data-active-group="3"] .text[data-group="3"] p,
+.container[data-active-group="4"] .text[data-group="4"] p,
+.container[data-active-group="5"] .text[data-group="5"] p,
+.container[data-active-group="6"] .text[data-group="6"] p,
+.container[data-active-group="7"] .text[data-group="7"] p,
+.container[data-active-group="8"] .text[data-group="8"] p,
+.container[data-active-group="9"] .text[data-group="9"] p,
+.container[data-active-group="10"] .text[data-group="10"] p,
+.container[data-active-group="11"] .text[data-group="11"] p,
+.container[data-active-group="12"] .text[data-group="12"] p,
+.container[data-active-group="13"] .text[data-group="13"] p,
+.container[data-active-group="14"] .text[data-group="14"] p,
+.container[data-active-group="15"] .text[data-group="15"] p,
+.container[data-active-group="16"] .text[data-group="16"] p,
+.container[data-active-group="17"] .text[data-group="17"] p,
+.container[data-active-group="18"] .text[data-group="18"] p,
+.container[data-active-group="19"] .text[data-group="19"] p,
+.container[data-active-group="20"] .text[data-group="20"] p,
+.container[data-active-group="21"] .text[data-group="21"] p,
+.container[data-active-group="22"] .text[data-group="22"] p,
+.container[data-active-group="23"] .text[data-group="23"] p 
+{
+    color: rgb(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
