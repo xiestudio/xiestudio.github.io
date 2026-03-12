@@ -65,7 +65,7 @@ body {
     background-color: white; /* Makes the square background white */
     display: flex;
     width: calc((100% - 1vw) / 3); /* Adjusted to fit 6 squares per row with spacing */
-    aspect-ratio: 1.3; /* Ensures the square has equal width and height */
+    aspect-ratio: 4/3;
     align-items: center; /* Centers the image vertically */
     justify-content: center; /* Centers the image horizontally */
     box-sizing: border-box; /* Includes padding and border in the width/height */
@@ -81,9 +81,6 @@ body {
     display: flex;
     flex-direction: column; /* Stacks text vertically */
     width: calc((100% - 1vw) / 3); /* Adjusted to fit 6 squares per row with spacing */
-}
-.text p{
-    color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -186,6 +183,32 @@ body {
 .container[data-active-group="23"] .text[data-group="23"] p 
 {
     color: rgb(0, 0, 0, 1);
+}
+.container[data-active-group="1"] .text:not([data-group="1"]) p,
+.container[data-active-group="2"] .text:not([data-group="2"]) p,
+.container[data-active-group="3"] .text:not([data-group="3"]) p,
+.container[data-active-group="4"] .text:not([data-group="4"]) p,
+.container[data-active-group="5"] .text:not([data-group="5"]) p,
+.container[data-active-group="6"] .text:not([data-group="6"]) p,
+.container[data-active-group="7"] .text:not([data-group="7"]) p,
+.container[data-active-group="8"] .text:not([data-group="8"]) p,
+.container[data-active-group="9"] .text:not([data-group="9"]) p,
+.container[data-active-group="10"] .text:not([data-group="10"]) p,
+.container[data-active-group="11"] .text:not([data-group="11"]) p,
+.container[data-active-group="12"] .text:not([data-group="12"]) p,
+.container[data-active-group="13"] .text:not([data-group="13"]) p,
+.container[data-active-group="14"] .text:not([data-group="14"]) p,
+.container[data-active-group="15"] .text:not([data-group="15"]) p,
+.container[data-active-group="16"] .text:not([data-group="16"]) p,
+.container[data-active-group="17"] .text:not([data-group="17"]) p,
+.container[data-active-group="18"] .text:not([data-group="18"]) p,
+.container[data-active-group="19"] .text:not([data-group="19"]) p,
+.container[data-active-group="20"] .text:not([data-group="20"]) p,
+.container[data-active-group="21"] .text:not([data-group="21"]) p,
+.container[data-active-group="22"] .text:not([data-group="22"]) p,
+.container[data-active-group="23"] .text:not([data-group="23"]) p 
+{
+    color: rgb(0, 0, 0, 0.4);
 }
 
 
