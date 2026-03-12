@@ -2,35 +2,6 @@
 <html lang="en">
 
 <head>
-    <!--本地可以 fetch之后pc端可以 手机端不行-->
-    <!-- <script>
-        if (window.innerWidth <= 768) {
-            window.location.replace("./images_m.html");
-        }
-    </script>   -->
-
-    <script>
-        // redirect to mobile version when viewport is narrow.
-        // try matchMedia first, but if the page is opened via file:// the query
-        // may still return false due to zoom/ratio, so fall back to a manual check.
-        function goMobile() {
-            var isMobile = false;
-            if (window.matchMedia) {
-                isMobile = window.matchMedia('(max-width: 768px)').matches;
-            }
-            if (!isMobile && window.innerWidth && window.devicePixelRatio) {
-                // convert CSS pixels to device‑independent pixels
-                var cssWidth = window.innerWidth / window.devicePixelRatio;
-                isMobile = cssWidth <= 768;
-            }
-            if (isMobile) {
-                window.location.replace("./images_m.html");
-            }
-        }
-        goMobile();
-    </script>
-
-
 
     <meta name="robots" content="noindex, nofollow, noimageindex">
     <meta charset="UTF-8">
