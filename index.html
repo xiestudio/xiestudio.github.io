@@ -110,67 +110,67 @@
     </footer>    
     
 
-<script>
-// Select all toggle-click headers
-document.querySelectorAll('.toggle-click').forEach(function(header) {
-    header.addEventListener('click', function() {
-        // Find the next sibling element that has the class 'toggle'
-        let sibling = header.nextElementSibling;
-        // Skip <br> if present
-        while (sibling && (sibling.tagName === 'BR' || !sibling.classList.contains('toggle'))) {
-            sibling = sibling.nextElementSibling;
-        }
-        if (sibling && sibling.classList.contains('toggle')) {
-            sibling.style.display = (sibling.style.display === 'block') ? 'none' : 'block';
-        }
+    <script>
+    // Select all toggle-click headers
+    document.querySelectorAll('.toggle-click').forEach(function(header) {
+        header.addEventListener('click', function() {
+            // Find the next sibling element that has the class 'toggle'
+            let sibling = header.nextElementSibling;
+            // Skip <br> if present
+            while (sibling && (sibling.tagName === 'BR' || !sibling.classList.contains('toggle'))) {
+                sibling = sibling.nextElementSibling;
+            }
+            if (sibling && sibling.classList.contains('toggle')) {
+                sibling.style.display = (sibling.style.display === 'block') ? 'none' : 'block';
+            }
+        });
     });
-});
 
-// Optionally, hide all toggles on page load
-// document.querySelectorAll('.toggle').forEach(function(div) {
-//     div.style.display = 'none';
-// }); 250901 remove otherwise mobile display doesnt work
-</script>
-
-
-<script>
-    const images = [
-        "https://img.xiestudio.com/images/3.jpg",
-        "https://img.xiestudio.com/images/2.jpg",
-        "https://img.xiestudio.com/images/1.jpg",
-
-        "https://img.xiestudio.com/images/view02 251119.jpg",
-        "https://img.xiestudio.com/images/view01 251112.jpg",
-        "https://img.xiestudio.com/images/251107.jpg",
-        
-        "https://img.xiestudio.com/images/4.jpg",
-        "https://img.xiestudio.com/images/6.jpg",
-        "https://img.xiestudio.com/images/9.jpg",
-        "https://img.xiestudio.com/images/10.jpg",
-        "https://img.xiestudio.com/images/13.jpg",
-        "https://img.xiestudio.com/images/15.jpg",
-        "https://img.xiestudio.com/images/18.jpg",
-        "https://img.xiestudio.com/projects/00_foresteria_01.jpg",
-        "https://img.xiestudio.com/projects/00_tempio_03.jpg",
-        "https://img.xiestudio.com/projects/00_wuxianguan_01.jpg",
-        "https://img.xiestudio.com/projects/00_wuxianguan_03.jpg",
-
-    ];
-
-    let current = 0;
-    // Correctly selects the image element
-    const imgDiv = document.querySelector('.container img');
-
-    // Add an event listener to the selected image element
-    imgDiv.onclick = function() {
-        // Increment the image index and loop back to 0 if it exceeds the array length
-        current = (current + 1) % images.length;
-        // Update the image source to the next image in the array
-        imgDiv.src = images[current];
-    };
-</script>
+    // Optionally, hide all toggles on page load
+    // document.querySelectorAll('.toggle').forEach(function(div) {
+    //     div.style.display = 'none';
+    // }); 250901 remove otherwise mobile display doesnt work
+    </script>
 
 
+    <script>
+        const images = [
+            "https://img.xiestudio.com/images/3.jpg",
+            "https://img.xiestudio.com/images/2.jpg",
+            "https://img.xiestudio.com/images/1.jpg",
+
+            "https://img.xiestudio.com/images/view02 251119.jpg",
+            "https://img.xiestudio.com/images/view01 251112.jpg",
+            "https://img.xiestudio.com/images/251107.jpg",
+            
+            "https://img.xiestudio.com/images/4.jpg",
+            "https://img.xiestudio.com/images/6.jpg",
+            "https://img.xiestudio.com/images/9.jpg",
+            "https://img.xiestudio.com/images/10.jpg",
+            "https://img.xiestudio.com/images/13.jpg",
+            "https://img.xiestudio.com/images/15.jpg",
+            "https://img.xiestudio.com/images/18.jpg",
+            "https://img.xiestudio.com/projects/00_foresteria_01.jpg",
+            "https://img.xiestudio.com/projects/00_tempio_03.jpg",
+            "https://img.xiestudio.com/projects/00_wuxianguan_01.jpg",
+            "https://img.xiestudio.com/projects/00_wuxianguan_03.jpg",
+
+        ];
+
+        let current = 0;
+        // Correctly selects the image element
+        const imgDiv = document.querySelector('.container img');
+
+        // Add an event listener to the selected image element
+        imgDiv.onclick = function() {
+            // Increment the image index and loop back to 0 if it exceeds the array length
+            current = (current + 1) % images.length;
+            // Update the image source to the next image in the array
+            imgDiv.src = images[current];
+        };
+    </script>
+
+    <script src="/js/main.js"></script> <!-- 防止右键下载 -->
 
 </body>
 </html>
