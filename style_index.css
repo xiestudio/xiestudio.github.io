@@ -136,10 +136,6 @@ body {
 
 }
 
-.research p {
-    color: rgb(0, 0, 0, 0.6);
-}
-
 .container img {
     position: relative;
     max-height: calc(100vh - 26vh);
