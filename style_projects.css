@@ -27,7 +27,7 @@ nav ul, footer ul{
     
     width: calc(100% - 3vw);
     margin: 0 auto;
-    top:1.3vh; 
+    top: 1.3vh; 
     
     position:relative;
     gap: 0.5vw;
@@ -155,7 +155,7 @@ body {
 .container[data-active-group="9"] .text:not([data-group="9"]) p,
 .container[data-active-group="10"] .text:not([data-group="10"]) p,
 .container[data-active-group="11"] .text:not([data-group="11"]) p,
-.container[data-active-group="12"] .text:not([data-group="12"]) p ,
+.container[data-active-group="12"] .text:not([data-group="12"]) p,
 .container[data-active-group="13"] .text:not([data-group="13"]) p
 {
     color: rgb(0, 0, 0, 0.4);
