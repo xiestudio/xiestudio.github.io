@@ -135,7 +135,8 @@ body {
 .container[data-active-group="10"] .image:not([data-group="10"]),
 .container[data-active-group="11"] .image:not([data-group="11"]),
 .container[data-active-group="12"] .image:not([data-group="12"]),
-.container[data-active-group="13"] .image:not([data-group="13"]) 
+.container[data-active-group="13"] .image:not([data-group="13"]),
+.container[data-active-group="14"] .image:not([data-group="14"])
 {
     opacity: 0%;
     transition: opacity 0.9s ease;
@@ -153,7 +154,8 @@ body {
 .container[data-active-group="10"] .image[data-group="10"] img,
 .container[data-active-group="11"] .image[data-group="11"] img,
 .container[data-active-group="12"] .image[data-group="12"] img,
-.container[data-active-group="13"] .image[data-group="13"] img
+.container[data-active-group="13"] .image[data-group="13"] img,
+.container[data-active-group="14"] .image[data-group="14"] img
 {
     opacity: 100%;
     transition: opacity 0.2s ease;
@@ -172,7 +174,8 @@ body {
 .container[data-active-group="10"] .text[data-group="10"] p,
 .container[data-active-group="11"] .text[data-group="11"] p,
 .container[data-active-group="12"] .text[data-group="12"] p,
-.container[data-active-group="13"] .text[data-group="13"] p
+.container[data-active-group="13"] .text[data-group="13"] p,
+.container[data-active-group="14"] .text[data-group="14"] p
 {
     color: rgb(0, 0, 0, 1);
 }

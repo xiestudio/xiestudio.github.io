@@ -1,5 +1,6 @@
 1 cloudflare-worker-img update
     D:
+    cd D:\Program Files\rclone\rclone-v1.72.1-windows-amd64
     rclone sync "D:\Github\xiestudio.github.io\img" r2:r2-img --dry-run -P      可以省略 check
     rclone sync "D:\Github\xiestudio.github.io\img" r2:r2-img -P
     rclone size r2:r2-img       可以省略 verify total
@@ -13,10 +14,11 @@
 
 4 改 projects_m.html
     加一组
+    改 script 末尾高亮最后一组
+
 
 5 改 style_projects.css
     加一组
 
-6 改 style_projects_m.html
+6 改 style_projects_m.css
     加一组
-    改 script 末尾高亮最后一组
