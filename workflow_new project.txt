@@ -22,3 +22,6 @@
 
 6 改 style_projects_m.css
     加一组
+
+* 如果有问题 cloudflare - xiestudio.com - cache - configuration - purge everything
+* 如果还有问题 ctrl f5 很可能是本地浏览器cache问题
